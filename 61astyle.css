@@ -1,0 +1,105 @@
+body, html {
+width: 100%;
+height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+    font-size:50px;
+    text-transform: uppercase;
+    margin:0;
+    font-family: 'Tajawal', sans-serif;
+}
+h2 {
+    font-size: 18px;
+    font-family: 'Tajawal', sans-serif;
+    text-align: left;
+}
+
+#backgroundimg {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+    height:100%;
+    position:relative;
+    z-index: -0;
+    filter: blur(7px);
+    opacity: 0;
+    animation: fadein 0.75s;
+    animation-delay:  1.5s;
+    animation-fill-mode: forwards;
+    background-image: url(ucb.jpeg);
+}
+.forwardtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    widows: 45%;
+    padding: 40px; 
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.45);
+    color: white;
+    font-weight: bold;
+    border: 3px;
+    border-color: white;
+    border-style:ridge;
+    filter: none !important;
+    margin: 5px;
+    margin-left:25px;
+    animation: fadein 0.75s;
+}
+.forwardtext:hover{
+    border-color:rgba(50, 50, 240, 0.6525);
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#reslink {
+    text-decoration: none !important;
+    color: lightblue;
+}
+
+
+.return-btn {
+    border-style: solid;
+    border: 2px 2px 2px 2px;
+    border-color: white;
+    font-size:30px;
+    color:white;
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    text-align: center;
+    min-height: 30px;
+    min-width: 70px;
+    vertical-align: top;
+    z-index: 5;
+    top:80%;
+    padding: 30px;
+    margin: 15px;
+    background-color: rgba(20, 20, 20, 0.45);
+    opacity: 0;
+    animation: fadein 0.75s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+.return-btn:hover {
+    background-color: rgba(50, 50, 240, 0.6525);
+}
+.return-btn a {
+    font-family: 'Tajawal', sans-serif;
+    text-decoration: none;
+    color:white;
+}
